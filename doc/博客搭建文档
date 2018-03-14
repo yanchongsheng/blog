@@ -1,0 +1,61 @@
+1、安装Node.js和Git
+
+2、安装hexo
+npm install -g hexo-cli
+
+3、生成hexo模板（即建立网站）
+hexo init
+scaffolds(支架的意思)文件夹的作用：新建文章时，Hexo 会根据 scaffold 来建立文件,在_config.yml中的：default_layout字段进行配置
+
+4、启动hexo
+hexo server(缩写:hexo s)
+
+5、新建文章
+hexo new [layout] <title>
+
+6、生成静态文件，即生成public目录
+hexo generate(缩写:hexo g)
+选项：-d，--deploy 文件生成后立即部署网站
+      -w, --watch  监视文件变动
+
+注意：Hexo 3.0 把服务器独立成了个别模块，您必须先安装 hexo-server 才能使用，
+好处：在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。
+npm install hexo-server --save
+
+注意：要将文章部署到Github服务器，必须先安装
+npm install hexo-deployer-git --save
+然后: hexo clean
+      hexo generate
+      hexo deploy
+
+7、部署生成的静态文件
+hexo deploy(缩写:hexo d)
+选项：-g, --generate	  部署之前预先生成静态文件
+
+8、清除缓存文件 (db.json) 和已生成的静态文件 (public)，即删除public目录
+hexo clean（发现站点更新不起作用时使用，尤其是更换主题后）
+
+9、显示 Hexo 版本
+hexo version
+
+10、调试模式（在终端中显示调试信息并记录到 debug.log）
+hexo --debug
+
+11、Hexo 的一种特殊布局：draft，这种布局在建立时会被保存到 source/_drafts 文件夹，可通过 publish 命令将草稿移动到 source/_posts 文件夹
+hexo publish [layout] <title>
+
+12、监视文件变动并立即重新生成静态文件
+hexo generate --watch
+
+13、生成完毕后自动部署网站
+hexo generate --deploy(简写:hexo g -d)
+或者
+hexo deploy --generate(简写:hexo d -g)
+
+14、实现统计功能，在根目录下安装hexo-wordcount运行
+npm install hexo-wordcount --save
+
+15、将博客部署到Github上
+npm install hexo-deployer-git --save
+
+

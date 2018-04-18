@@ -1,7 +1,7 @@
 ---
 title: Intellij IDEA 自动创建 测试类
 copyright: true
-date: 2018-03-28 15:03:03
+date: 2018-03-28 20:03:03
 updated:
 comments:
 tags: 工具手册

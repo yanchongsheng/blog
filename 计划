@@ -1,13 +1,18 @@
 
 
 工厂设计模式
-观察者设计模式
 单例设计模式
 适配器模式
 装饰器模式
 代理模式
 
 
+源码阅读计划：
+Object 类源码阅读
+String 类源码阅读
+Class 类源码阅读
+ArrayList 类源码阅读
+HashMap 类源码阅读
 
 
 
@@ -53,8 +58,6 @@ https://github.com/wizardforcel/markdown-simple-world/blob/master/1.md
 
 讲解Java 内存操作流的
 http://www.cnblogs.com/xinhuaxuan/p/6050323.html
-
-将tomcat注册成服务，方便开机跟着系统一起启动
 
 关于socket写的不错：
 http://www.cnblogs.com/hq-antoine/archive/2012/02/11/2346474.html

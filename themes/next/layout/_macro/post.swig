@@ -207,10 +207,13 @@
                  <i class="fa fa-eye"></i>
                </span>
                {% if theme.post_meta.item_text %}
-                 <span class="post-meta-item-text">{{__('post.visitors')}}&#58;</span>
+                 <span class="post-meta-item-text">{{__('post.visitors')}}</span>
                {% endif %}
+                 <span id="busuanzi_container_page_pv">
+                   <span id="busuanzi_value_page_pv"></span>
+                 </span>
                  <span class="leancloud-visitors-count"></span>
-                 <span>oC</span>
+                 <span>℃</span>
              </span>
           {% endif %}
 
@@ -231,7 +234,7 @@
                           <i class="fa fa-file-word-o"></i>
                         </span>
                         {% if theme.post_wordcount.item_text %}
-                          <span class="post-meta-item-text">{{ __('post.wordcount') }}&#58;</span>
+                          <span class="post-meta-item-text">{{ __('post.wordcount') }}</span>
                         {% endif %}
                         <span title="{{ __('post.wordcount') }}">
                           {{ wordcount(post.content) }}

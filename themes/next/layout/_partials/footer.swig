@@ -31,7 +31,7 @@
 
 <div class="theme-info">
   <i class="fa fa-paint-brush" aria-hidden="true"></i>
-  <span class="post-count">博客全站共{{ totalcount(site) }}字</span>
+  <span class="post-count">博客全站共 {{ totalcount(site) }} 字</span>
 </div>
 
 {% if theme.footer.custom_text %}
